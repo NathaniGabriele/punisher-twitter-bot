@@ -1,10 +1,11 @@
 import json
 import lyricsgenius
 import random
+import os
 
-GENIUS_CLIENT_ID = "VYnhyjgTQDMalztG-hIHrQv0-xa4XLEOEFhaAkIL3w_1tPYQXec30OBKKQoFvsOs"
-GENIUS_SECRET = "1HyDe3UnfnfHkrYCYPLs8V2tNEF9QlqEDVlFpW2EIALvBBihOI-dGQ-1Tb07Bll5sg71QOZGw4vVWDlh8oUC5A"
-TOKEN = "yuoWtMlV8goqooDEdNEflbHw9SAvgdLTTB7atPWmOw6S44g6Q9K3_yZB4XJhu5P4"
+GENIUS_CLIENT_ID = os.environ['GENIUS_CLIENT_ID']
+GENIUS_SECRET = os.environ['GENIUS_SECRET']
+TOKEN = os.environ['TOKEN']
 
 genius = lyricsgenius.Genius(TOKEN)
 
